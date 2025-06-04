@@ -9,7 +9,7 @@ const colorsInput = form.colors;
 const isElectroInput = form.electro;
 
 function ValidItems(){
-    if (modelInput.value === "" || modelInput.value === "0"){
+    if (modelInput.value === "" || !yearInput.value){
         return false
     }
     return true
