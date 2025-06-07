@@ -80,3 +80,27 @@ addEggBtn.onclick = (event) =>{
     tableBody.innerHTML += egg.toHTMLRow();
 
 }
+
+function handleRowClick(name) {
+    RandomChoiceResept(name);
+}
+function RandomChoiceResept(name){
+    //const rand = getRandomInt(1, 10);
+    switch(name){
+        case "fish":
+            window.open("https://www.allrecipes.com/recipe/12782/lemon-garlic-tilapia/", "_blank");
+            break;
+        case "egg":
+            window.open("https://www.allrecipes.com/recipe/222618/classic-egg-salad/", "_blank");
+            break;
+        case "cheese":
+            window.open("https://www.allrecipes.com/recipe/23600/worlds-best-lasagna/", "_blank"); // просто запитав в чата силки
+            break;
+        case "meat":
+            window.open("https://www.allrecipes.com/recipe/25473/beef-stroganoff-iii/", "_blank");
+            break;
+        default:
+            alert("Немає рецепту для цього інгредієнта");
+}
+
+}

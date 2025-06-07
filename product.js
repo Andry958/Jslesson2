@@ -31,9 +31,10 @@ class product{
         this.picture = picture
     }
     toHTMLRow() {
-                return `<tr>
-                            <td><img src="${this.picture}" width="50%" height="70%" /></td>
-                            <td>${this.name}</td>
-                        </tr>`;
+               return `
+                <tr onclick="handleRowClick('${this.name}')">
+                    <td><img src="${this.picture}" width="50%" height="70%" /></td>
+                    <td>${this.name}</td>
+                </tr>`;
             }
 }
